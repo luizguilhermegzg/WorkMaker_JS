@@ -1,0 +1,19 @@
+{
+  "name": "work-maker",
+  "version": "1.0.0",
+  "description": "Um programa que faz seus trabalhos por você resume, imprime e etc. Chega de complicações na sua vida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizguilhermegzg/work-maker.git"
+  },
+  "author": "luizguilherme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizguilhermegzg/work-maker/issues"
+  },
+  "homepage": "https://github.com/luizguilhermegzg/work-maker#readme"
+}
