@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/luizguilhermegzg/work-maker/issues"
   },
-  "homepage": "https://github.com/luizguilhermegzg/work-maker#readme"
+  "homepage": "https://github.com/luizguilhermegzg/work-maker#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
