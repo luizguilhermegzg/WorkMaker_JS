@@ -19,6 +19,17 @@ async function start() {
 		const selectedLangText = language[selectedLangIndex]
 		return selectedLangText
 	}
+	async function resumir(){
+		const algorithmia = require("algorithmia");
+		const algorithmiaApiKey = require('./credentials/algorithmia.json').apiKey
+		var input = content.sourceContentOriginal
+		const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
+		const summarizerAlgorithm = algorithmiaAuthenticated.algo("nlp/Summarizer/0.1.8")
+		const summarizerResponse= await summarizerAlgorithm.pipe(input)
+		const summarizerText = summarizerResponse.get()
+		content.sourceContentOriginal = summarizerText
+		saveArchive()
+	}
 	function saveArchive(){
 		console.log('\nTodos os arquivos são salvos em Archives-saves')
 		var archiveName = readline.question('Qual o nome do arquivo: ')
@@ -41,8 +52,8 @@ async function start() {
 		})
 	}
 	function printer(){
-		console.log('debugging')
+		console.log('debugging...')
 	}
-	saveArchive()
+	resumir()
 }
 start()
