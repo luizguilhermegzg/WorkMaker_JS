@@ -6,7 +6,10 @@ async function robots(content) {
 	async function fetchContentFromWikipedia(content){
 		const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
 		const wikipediaAlgorithm = algorithmiaAuthenticated.algo('web/WikipediaParser/0.1.2')
-		const wikipediaResponde = await wikipediaAlgorithm.pipe(content.searchTheme)
+		const wikipediaResponde = await wikipediaAlgorithm.pipe({
+            "lang" : content.Lang,
+            "articleName" : content.searchTheme
+        })
 		const wikipediaContent = wikipediaResponde.get()
 		
 		content.sourceContentOriginal = wikipediaContent.content
