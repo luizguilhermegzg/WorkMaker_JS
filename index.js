@@ -15,9 +15,18 @@ async function start() {
 	}
 	function askAndReturnLanguage(){
 		const language = ['pt','en']
-		const selectedLangIndex = readline.question('[0] Português'+'\n[1] Inglês'+'\nChoice Language: ')
+		const selectedLangIndex = readline.question('\n<<<<Language>>>>\n[0] Português'+'\n[1] Inglês'+'\nChoice Language: ')
 		const selectedLangText = language[selectedLangIndex]
 		return selectedLangText
+	}
+	function askAndReturnSummarizer(){
+		var response = readline.question('\n<<<<Resumir>>>>\n[1] Sim\n[2] Não\nResumir: ')
+		if (response == '1'){
+			return resumir()
+		}
+		else{
+			return saveArchive()
+		}
 	}
 	async function resumir(){
 		const algorithmia = require("algorithmia");
@@ -38,9 +47,9 @@ async function start() {
 				return console.log('erro!!')
 			}
 			else{
-				console.log('Arquivo salvo com sucesso!')
+				console.log('\nArquivo salvo com sucesso!')
 				const printerYN = [false,true]
-				var resposeIndex = readline.question('Imprimir? [1] Sim [0] Não: ')
+				var resposeIndex = readline.question('\nImprimir? [1] Sim [0] Não: ')
 				const response = printerYN[resposeIndex] 
 				if (response == true){
 					return printer()
@@ -54,6 +63,6 @@ async function start() {
 	function printer(){
 		console.log('debugging...')
 	}
-	resumir()
+	askAndReturnSummarizer()
 }
 start()
