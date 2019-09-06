@@ -29,6 +29,7 @@ async function start() {
 		}
 	}
 	async function resumir(){
+		console.log('\nResumindo...')
 		const algorithmia = require("algorithmia");
 		const algorithmiaApiKey = require('./credentials/algorithmia.json').apiKey
 		var input = content.sourceContentOriginal
@@ -37,6 +38,7 @@ async function start() {
 		const summarizerResponse= await summarizerAlgorithm.pipe(input)
 		const summarizerText = summarizerResponse.get()
 		content.sourceContentOriginal = summarizerText
+		console.log('Pronto!')
 		saveArchive()
 	}
 	function saveArchive(){
@@ -66,3 +68,4 @@ async function start() {
 	askAndReturnSummarizer()
 }
 start()
+

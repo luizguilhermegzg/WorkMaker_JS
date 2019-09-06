@@ -4,6 +4,7 @@ async function robots(content) {
 	await fetchContentFromWikipedia(content)
     sanitizedContent(content)
 	async function fetchContentFromWikipedia(content){
+        var wait = console.log('\nBaixando conteudo da wikipedia...')
 		const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
 		const wikipediaAlgorithm = algorithmiaAuthenticated.algo('web/WikipediaParser/0.1.2')
 		const wikipediaResponde = await wikipediaAlgorithm.pipe({
@@ -11,7 +12,7 @@ async function robots(content) {
             "articleName" : content.searchTheme
         })
 		const wikipediaContent = wikipediaResponde.get()
-		
+		wait = console.log('Conteudo baixado com sucesso!')
 		content.sourceContentOriginal = wikipediaContent.content
 	}
 }
