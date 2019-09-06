@@ -19,9 +19,6 @@
   "dependencies": {
     "algorithmia": "^0.3.10",
     "fs": "0.0.1-security",
-    "node-gyp": "^5.0.3",
-    "printer": "git+https://github.com/tojocky/node-printer.git",
-    "readline-sync": "^1.4.10",
-    "rebuild": "^0.1.2"
+    "readline-sync": "^1.4.10"
   }
 }

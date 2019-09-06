@@ -1,6 +1,5 @@
 const fs = require('fs')
 const readline = require('readline-sync')
-const printer = require('printer')
 const robots = {
 	text: require('./robots/texto.js')
 }
@@ -63,7 +62,7 @@ async function start() {
 		})
 	}
 	function printer(){
-		console.log('debugging...')
+		console.log(printer.printerOptions(printer))
 	}
 	askAndReturnSummarizer()
 }
