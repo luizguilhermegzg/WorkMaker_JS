@@ -10,4 +10,4 @@
 ## 3 - Instale as dependencias
 ### Digite no terminal: npm install
 ## 4 - Rode o programa com: 
-### Node index.js
+### node index.js
