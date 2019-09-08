@@ -52,7 +52,8 @@ async function start() {
 
 				}		
 				else{
-					console.log('Goodbye!')
+					readline.keyInPause("\nPressione qualquer tecla para sair...")
+
 				}
 			}
 		})
