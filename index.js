@@ -19,14 +19,13 @@ async function start() {
 		return selectedLangText
 	}
 	function askAndReturnSummarizer(){
-		var response = readline.question('\n<<<<Resumir>>>>\n[1] Sim\n[2] Não\nResumir: ')
-		if (response == '1'){
-			return resumir()
+		if(readline.keyInYN('\nDeseja resumir o texto: ')){
+			resumir()
 		}
 		else{
-			return saveArchive()
+			saveArchive()
 		}
-	}
+}
 	async function resumir(){
 		console.log('\nResumindo...')
 		const algorithmia = require("algorithmia");
@@ -48,22 +47,17 @@ async function start() {
 				return console.log('erro!!')
 			}
 			else{
-				console.log('\nArquivo salvo com sucesso!')
-				const printerYN = [false,true]
-				var resposeIndex = readline.question('\nImprimir? [1] Sim [0] Não: ')
-				const response = printerYN[resposeIndex] 
-				if (response == true){
-					return printer()
-				}
+				if (readline.keyInYN('\nReiniciar o programa: ')){
+					start()
+
+				}		
 				else{
-					return console.log('Program exit!')
+					console.log('Goodbye!')
 				}
 			}
 		})
 	}
-	function printer(){
-		console.log(printer.printerOptions(printer))
-	}
+
 	askAndReturnSummarizer()
 }
 start()
