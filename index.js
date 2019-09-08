@@ -14,7 +14,7 @@ async function start() {
 	}
 	function askAndReturnLanguage(){
 		const language = ['pt','en']
-		const selectedLangIndex = readline.question('\n<<<<Language>>>>\n[0] Português'+'\n[1] Inglês'+'\nChoice Language: ')
+		const selectedLangIndex = readline.keyInSelect(language, "Escolha uma linguagem: ")
 		const selectedLangText = language[selectedLangIndex]
 		return selectedLangText
 	}
