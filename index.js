@@ -4,6 +4,8 @@ const robots = {
 	text: require('./robots/texto.js')
 }
 async function start() {
+    console.log('github: https://github.com/luizguilhermegzg')
+    console.log('git-repository: https://github.com/luizguilhermegzg/work-maker')	
     const content = {}
     content.searchTheme = askAndReturnSearchTheme()
     content.Lang = askAndReturnLanguage()
