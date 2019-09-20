@@ -40,15 +40,15 @@ async function start() {
 		saveArchive()
 	}
 	function saveArchive(){
-		console.log('\nTodos os arquivos são salvos em Archives')
-		var archiveName = readline.question('Qual o nome do arquivo: ')
-		fs.writeFile("./Archives/"+archiveName+".odt",content.sourceContentOriginal, function(err){
+		console.log('\nTodos os arquivos são salvos na pasta principal!')
+		fs.writeFile("./"+content.searchTheme+".odt",content.sourceContentOriginal, function(err){
 			if(err){
 				return console.log('erro!!')
 			}
 			else{
 				if (readline.keyInYN('\nReiniciar o programa: ')){
-					start()
+					content.searchTheme = ''
+          start()
 
 				}		
 				else{
