@@ -1,13 +1,9 @@
 # work-maker
 
 ## Pré Instalação
-## 1 - Instale o git e o node js
-### Download Git: [git](https://git-scm.com)
-### Download Node js: [Node js](https://nodejs.org/en/)
-## Instalação
-## 2 - Clone o repositorio do github
-### No terminal digite: git clone https://github.com/luizguilhermegzg/work-maker.git
-## 3 - Instale as dependencias
-### Digite no terminal: npm install
-## 4 - Rode o programa com: 
-### node index.js
+### 1 - Instale o node js para melhor exepriencia: https://nodejs.org/en/
+### 2 - Certifique se seu sistema é de 64 bits. Se sim pule para proxima etapa, se não, me desculpe não posso lhe ajudar!
+## Download links:
+### Windows: https://drive.google.com/open?id=1IYlo8k0-9X9z_KuGJb5P3F4g_3dzdFz0
+### Linux: https://drive.google.com/open?id=1H3K20um2TfoQ8KODcFvLdd1gkwERejqx
+### Mac: https://drive.google.com/open?id=1s1N_YoC-5woWmrF_nMWsNzjPc2_0KmAz
