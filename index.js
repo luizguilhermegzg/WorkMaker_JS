@@ -3,15 +3,20 @@ const readline = require('readline-sync')
 const robots = {
 	text: require('./robots/texto.js')
 }
+var startProgram = 0
 async function start() {
-    console.log('github: https://github.com/luizguilhermegzg')
-    console.log('git-repository: https://github.com/luizguilhermegzg/work-maker')	
+	if(startProgram ==0){
+		console.log('github: https://github.com/luizguilhermegzg\ngit-repository: https://github.com/luizguilhermegzg/work-maker')
+	}
+	else{
+		
+	}
     const content = {}
     content.searchTheme = askAndReturnSearchTheme()
     content.Lang = askAndReturnLanguage()
 	await robots.text(content)
 	function askAndReturnSearchTheme(){
-	return readline.question('Type a Wikipedia search Theme: ')
+	return readline.question('\nType a Wikipedia search Theme: ')
 	
 	}
 	function askAndReturnLanguage(){
@@ -50,6 +55,7 @@ async function start() {
 			else{
 				if (readline.keyInYN('\nReiniciar o programa: ')){
 					content.searchTheme = ''
+					startProgram +=1
           start()
 
 				}		

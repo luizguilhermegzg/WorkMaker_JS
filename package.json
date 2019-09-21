@@ -1,6 +1,6 @@
 {
   "name": "work-maker",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Um programa que faz seus trabalhos por você resume, imprime e etc. Chega de complicações na sua vida",
   "main": "index.js",
   "scripts": {
