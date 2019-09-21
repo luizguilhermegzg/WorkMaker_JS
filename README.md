@@ -8,5 +8,5 @@
 #### Clique aqui para baixar para Linux: [Clique aqui!](https://github.com/luizguilhermegzg/work-maker/raw/master/Downloads/Work-maker%20Linux.zip)
 #### Clique aqui para baixar para Mac: [Clique aqui!](https://github.com/luizguilhermegzg/work-maker/raw/master/Downloads/Work-maker%20Mac.zip)
 #### Caso queira ajudar o projeto clone o repositorio com: <code>git clone https://github.com/luizguilhermegzg/work-maker.git</code>
-##### Obrigado por baixar, dê seu feedback se possivel!
+##### Obrigado por baixar, dê seu feedback se possivel em <uminutilqualquer3144@gmail.com>
 #### Programa criado por Luiz Guilherme Costa da Silva
