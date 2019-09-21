@@ -1,8 +1,8 @@
 # work-maker
 
 ## Pré Instalação
-### 1 - Instale o node js para melhor exepriencia: https://nodejs.org/en/
-### 2 - Certifique se seu sistema é de 64 bits. Se sim pule para proxima etapa, se não, me desculpe não posso lhe ajudar!
+* 1 - Instale o node js para melhor exepriencia: https://nodejs.org/en/
+* 2 - Certifique se seu sistema é de 64 bits. Se sim pule para proxima etapa, se não, me desculpe não posso lhe ajudar!
 ## Download links:
 #### Clique aqui para baixar para Windows: [Clique aqui!](https://github.com/luizguilhermegzg/work-maker/raw/master/Downloads/Work-maker%20Windows.zip)
 #### Clique aqui para baixar para Linux: [Clique aqui!](https://github.com/luizguilhermegzg/work-maker/raw/master/Downloads/Work-maker%20Linux.zip)
