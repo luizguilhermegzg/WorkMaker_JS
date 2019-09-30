@@ -11,7 +11,7 @@ async function start() {
 	else{
 		
 	}
-    const content = {}
+	const content = {}
     content.searchTheme = askAndReturnSearchTheme()
     content.Lang = askAndReturnLanguage()
 	await robots.text(content)
@@ -20,7 +20,7 @@ async function start() {
 	
 	}
 	function askAndReturnLanguage(){
-		const language = ['pt','en']
+		var language = ['pt','en']
 		const selectedLangIndex = readline.keyInSelect(language, "Escolha uma linguagem: ")
 		const selectedLangText = language[selectedLangIndex]
 		return selectedLangText
