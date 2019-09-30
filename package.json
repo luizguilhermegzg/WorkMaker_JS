@@ -20,5 +20,8 @@
     "algorithmia": "^0.3.10",
     "fs": "0.0.1-security",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
