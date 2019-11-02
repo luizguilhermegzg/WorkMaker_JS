@@ -9,7 +9,7 @@ async function start() {
 		console.log('github: https://github.com/luizguilhermegzg\ngit-repository: https://github.com/luizguilhermegzg/work-maker')
 	}
 	else{
-		
+
 	}
     const content = {}
     content.searchTheme = askAndReturnSearchTheme()
@@ -17,10 +17,10 @@ async function start() {
 	await robots.text(content)
 	function askAndReturnSearchTheme(){
 	return readline.question('\nType a Wikipedia search Theme: ')
-	
+
 	}
 	function askAndReturnLanguage(){
-		const language = ['pt','en']
+		const language = ['pt','en','ko','jp']
 		const selectedLangIndex = readline.keyInSelect(language, "Escolha uma linguagem: ")
 		const selectedLangText = language[selectedLangIndex]
 		return selectedLangText
@@ -58,7 +58,7 @@ async function start() {
 					startProgram +=1
           start()
 
-				}		
+				}
 				else{
 					readline.keyInPause("\nPressione qualquer tecla para sair...")
 
