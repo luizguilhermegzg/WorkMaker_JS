@@ -1,8 +1,14 @@
 {
   "name": "work-maker",
-  "version": "1.4.0",
-  "description": "Um programa que faz seus trabalhos por você resume, imprime e etc. Chega de complicações na sua vida",
+  "version": "1.0.0",
+  "description": "<h1>Work Maker</h1>",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "algorithmia": "^0.3.10",
+    "fs": "0.0.1-security",
+    "readline-sync": "^1.4.10"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,15 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/luizguilhermegzg/work-maker.git"
   },
-  "author": "luizguilherme",
+  "author": "luiz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/luizguilhermegzg/work-maker/issues"
   },
-  "homepage": "https://github.com/luizguilhermegzg/work-maker#readme",
-  "dependencies": {
-    "algorithmia": "^0.3.10",
-    "fs": "0.0.1-security",
-    "readline-sync": "^1.4.10"
-  },
+  "homepage": "https://github.com/luizguilhermegzg/work-maker#readme"
 }
