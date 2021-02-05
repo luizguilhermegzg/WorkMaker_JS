@@ -48,7 +48,7 @@ async function start() {
 	}
 	function saveArchive(){
 		console.log('\nTodos os arquivos são salvos na pasta principal!')
-		fs.writeFile("./resumos/"+content.searchTheme+".odt",content.sourceContentOriginal, function(err){
+		fs.writeFile("./resumos/"+content.searchTheme+".docx",content.sourceContentOriginal, function(err){
 			if(err){
 				return console.log('erro!!')
 			}
